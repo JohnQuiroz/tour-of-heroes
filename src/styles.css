@@ -1,6 +1,50 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Store */
 /* Global Styles */
 
-* {
+/* * {
   font-family: 'Roboto', Arial, sans-serif;
   color: #616161;
   box-sizing: border-box;
@@ -19,11 +63,11 @@ body {
 
 router-outlet + *  {
   padding: 0 16px;
-}
+} */
 
 /* Text */
 
-h1 {
+/* h1 {
   font-size: 32px;
 }
 
@@ -37,11 +81,11 @@ h1, h2 {
 
 p {
   font-size: 14px;
-}
+} */
 
 /* Hyperlink */
 
-a {
+/* a {
   cursor: pointer;
   color: #1976d2;
   text-decoration: none;
@@ -49,11 +93,11 @@ a {
 
 a:hover {
   opacity: 0.8;
-}
+} */
 
 /* Input */
 
-input {
+/* input {
   font-size: 14px;
   border-radius: 2px;
   padding: 8px;
@@ -67,10 +111,10 @@ label {
   margin-bottom: 4px;
   display: block;
   text-transform: uppercase;
-}
+} */
 
 /* Button */
-.button, button {
+/* .button, button {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -90,11 +134,11 @@ label {
 .button:disabled, button:disabled {
   opacity: 0.5;
   cursor: auto;
-}
+} */
 
 /* Fancy Button */
 
-.fancy-button {
+/* .fancy-button {
   background-color: white;
   color: #1976d2;
 }
@@ -102,11 +146,11 @@ label {
 .fancy-button i.material-icons {
   color: #1976d2;
   padding-right: 4px;
-}
+} */
 
 /* Top Bar */
 
-app-top-bar {
+/* app-top-bar {
   width: 100%;
   height: 68px;
   background-color: #1976d2;
@@ -120,11 +164,11 @@ app-top-bar {
 app-top-bar h1 {
   color: white;
   margin: 0;
-}
+} */
 
 /* Checkout Cart, Shipping Prices */
 
-.cart-item, .shipping-item {
+/* .cart-item, .shipping-item {
   width: 100%;
   min-width: 400px;
   max-width: 450px;
@@ -135,7 +179,7 @@ app-top-bar h1 {
   margin-bottom: 8px;
   border-radius: 2px;
   background-color: #EEEEEE;
-}
+} */
 
 
 /*
