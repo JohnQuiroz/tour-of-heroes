@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 // import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     // ProductListComponent,
     // ProductAlertsComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
   ],
   bootstrap: [
     AppComponent
