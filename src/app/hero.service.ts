@@ -20,4 +20,10 @@ export class HeroService {
     this.messageService.add('HeroService: héroes traídos');
     return heroes;
   }
+
+  getHero(id: number): Observable<Hero> {
+    const hero = HEROES.find(h => h.id === id)!;
+    this.messageService.add(`HeroService: Id del héroe traído=${id}`);
+    return of(hero);
+  }
 }
