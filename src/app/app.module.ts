@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 // import { RouterModule } from '@angular/router';
 // import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 // import { TopBarComponent } from './top-bar/top-bar.component';
 // import { ProductListComponent } from './product-list/product-list.component';
@@ -13,12 +12,20 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
     // ReactiveFormsModule,
     // RouterModule.forRoot([
     //   { path: '', component: ProductListComponent },
@@ -32,7 +39,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   bootstrap: [
     AppComponent
